@@ -35,6 +35,8 @@ html, body{
     padding: 0px;
     font-size: 16px;
     font-family: "Nunito Sans", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -116,6 +118,8 @@ nav > .wrapper{
     display: flex;
     align-items: center;
     gap: 80px;
+    justify-content: center;
+    overflow-x: hidden;
 }
 
 /* FOTO */
@@ -129,10 +133,10 @@ nav > .wrapper{
 
 /* TEKS */
 .hero-right{
-    margin-left: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 .hero-right h1{
     color: #fff;
@@ -172,22 +176,26 @@ nav > .wrapper{
   background: var(--surface-100);
   color: var(--text-dark);
   padding: 80px 0;
+  overflow: visible;
 }
 
 .container h2 {
     font-size: 40px;
-    margin-bottom: auto;
+    margin-bottom: 24px;
 }
 
 .about-intro {
-  max-width: auto;
+  max-width: 100%;
   margin-bottom: 48px;
   line-height: 1.7;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .experience-list {
-  display: grid;
   gap: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-item {
@@ -195,7 +203,9 @@ nav > .wrapper{
   color: var(--text-light);
   padding: 10px;
   border-radius: 12px;
+  max-width: 100%;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-sizing: border-box;
 }
 
 .experience-item h4 {
@@ -264,7 +274,6 @@ PROJEK GRID
 .project-card {
   background: var(--surface-100);
   border-radius: 20px;
-  overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
   width: 100%;
@@ -524,6 +533,10 @@ PROJEK GRID
   border-radius: 20%;
 }
 
+.img-dashboard img{
+  object-fit: cover;
+}
+
 /* =====================
    FOOTER
 ===================== */
@@ -609,7 +622,7 @@ ANIMASI
 /* =================
 MEDIA 
 ====================*/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     header{
         height: auto;
         padding: 120px 0 80px;
@@ -618,12 +631,14 @@ MEDIA
     .hero {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
         gap: 40px;
     }
 
     .hero-left img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
+        justify-content: center;
     }
 
     .hero-right{
@@ -661,6 +676,13 @@ MEDIA
     }
 }
 
+@media (max-width: 768px) {
+  .experience-item {
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
+
 @media (max-width: 900px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -680,26 +702,21 @@ MEDIA
   .project-info {
     grid-template-columns: 1fr;
   }
+
+  .detail-feature{
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
     .footer-name {
-        font-size: 32px;
+        font-size: 16px;
     }
 
     .footer-socials a {
-        font-size: 32px;
+        font-size: 16px;
         padding: 8px 14px;
     }
 }
 
-@media (max-width: 768px) {
-  .project-features {
-    grid-template-columns: 1fr;
-  }
-
-  .detail-feature {
-    text-align: center;
-  }
-}
 

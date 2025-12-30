@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>analytics dashboard </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>Airbnb Analytics Dashboard</h1>
+    <p class="project-meta">
+      Competition Project | Data Analysis & Dashboard Visualization
+      <br><i>GELAR RASA 2024</i></br>
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>data preprocessing, exploratory data analysis, and insight generation</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>Google Colab, Phyton</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>Oct 2024 - Nov 2024</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>
+        This project was developed as part of the Dashboard Visualization Competition at GELAR RASA 2024. The project focuses on analyzing Airbnb listing data to uncover pricing patterns, user preferences, and key factors influencing listing performance. My role in this project primarily involved data preprocessing, exploratory data analysis, and insight generation, where analytical findings were translated into dashboard requirements. Based on these insights, an interactive dashboard was designed and implemented collaboratively to support data storytelling and business-oriented decision making. The final output is an interactive Looker Studio dashboard that presents analytical results in a clear, structured, and actionable manner.
+      </p>
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+      <h4>Price & Property Analysis</h4>
+      <p>
+        This section analyzes Airbnb pricing patterns across different districts, property types, and room types. Visualizations include average price comparisons, listing price distributions by district, and the impact of amenities count on pricing, helping identify pricing trends and market differences.
+      </p>
+      <img src="images/price and property type.png" alt="preprocessing">
+    </div>
+
+    <div class="feature-card">
+      <h4>Ratings & Reviews Analysis</h4>
+      <p>
+        Provides insights into customer satisfaction by analyzing review scores across multiple categories such as cleanliness, location, communication, and accuracy. The dashboard also visualizes the relationship between listing prices and review ratings, as well as top-performing listings based on overall ratings.
+      </p>
+      <img src="images/ratings and reviews.png" alt="preprocessing">
+    </div>
+
+    <div class="feature-card">
+      <h4>Preference & Popularity Insights</h4>
+      <p>
+        Highlights user preferences and listing popularity based on the number of reviews. This feature allows comparison across districts and property types, helping identify which listings attract the most attention from users.
+      </p>
+      <img src="images/Property Preferences, Popularity, and Predictions.png" alt="preprocessing">
+    </div>
+
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Data Understanding & Problem Framing</h4>
+        <p>
+          The project began with understanding the competition case and identifying key business questions related to pricing, popularity, and user preferences within Airbnb listings.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Data Cleaning & Preparation</h4>
+        <p>
+          Raw datasets provided by the competition organizers were explored and cleaned to ensure consistency and reliability. This step included handling missing values, merging datasets, and preparing derived variables for analysis.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Exploratory Data Analysis</h4>
+        <p>
+          Exploratory analysis was conducted to identify relationships between listing attributes, pricing, ratings, and user behavior. Patterns and correlations discovered at this stage formed the basis for defining dashboard metrics and visualizations.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Insight Definition & Dashboard Planning</h4>
+        <p>
+          Based on analytical findings, key insights and storytelling goals were defined. These insights guided decisions on what metrics, charts, and interactions should be included in the final dashboard.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Dashboard Development & Validation</h4>
+        <p>
+          Insights were implemented into an interactive Looker Studio dashboard collaboratively. The dashboard was reviewed to ensure clarity, interpretability, and alignment with business decision-making needs.
+        </p>
+      </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">Improved ability to transform raw data into actionable business insights</div>
+        <div class="outcome-item">Hands-on experience in exploratory data analysis and feature engineering</div>
+        <div class="outcome-item">Stronger understanding of data storytelling through dashboard visualizations</div>
+        <div class="outcome-item">Experience working with real-world competition datasets and analytical constraints</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

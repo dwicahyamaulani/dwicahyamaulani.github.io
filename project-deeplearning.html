@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projek deep learning</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>Paper Deep Learning</h1>
+    <p class="project-meta">
+      Academic Project | Deep Learning
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>Model setup, analysis, visualization</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>Overleaf</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>Nov 2025 - Des 2025</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>
+        This project was conducted as part of a Deep Learning course, focusing on the analysis and extension of an existing research paper on optimization methods. The study explores Sharpness-Aware Minimization (SAM) and evaluates its behavior when combined with different optimizers to better understand its impact on model generalization. Through controlled experiments and analysis, the project aims to identify practical insights into optimizer performance under limited training budgets.
+      </p>
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+      <h4>Research Gap</h4>
+      <p>
+        Previous studies on Sharpness-Aware Minimization (SAM) primarily evaluate its effectiveness using base optimizers such as Stochastic Gradient Descent (SGD). The behavior and impact of SAM when combined with adaptive optimizers remain insufficiently explored, leaving a gap in understanding its generalization performance beyond standard optimization settings.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h4>Abstract</h4>
+      <p>
+        This study investigates the effectiveness of Sharpness-Aware Minimization (SAM) when paired with adaptive optimizers, specifically AdamW. Through controlled experiments on the CIFAR-10 dataset using a ResNet-18 architecture, multiple optimization strategies were compared under a fixed short training budget. The results indicate that while SAM alters optimization dynamics by smoothing training trajectories, it does not consistently improve accuracy when applied to AdamW, highlighting the sensitivity of SAM to optimizer choice and training configuration.
+      </p>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Model Setup & Configuration</h4>
+        <p>
+          Responsible for setting up the deep learning models, including configuring network architecture, optimizer selection, and training parameters. This stage ensured that all experimental settings were consistent and aligned with the research objectives.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Experimental Analysis</h4>
+        <p>
+          Conducted analysis of training and validation results to evaluate optimizer behavior and generalization performance. The analysis focused on comparing different optimization strategies and interpreting performance trends under controlled training conditions.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Result Visualization</h4>
+        <p>
+          Created visualizations such as training curves and performance comparisons to clearly communicate experimental outcomes. These visual representations supported deeper insights into model behavior and strengthened the clarity of the research findings.
+        </p>
+      </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">Improved understanding of deep learning optimization techniques</div>
+        <div class="outcome-item">Practical insights into optimizer behavior and generalization performance</div>
+        <div class="outcome-item">Experience in designing and conducting controlled machine learning experiments</div>
+        <div class="outcome-item">Enhanced research and academic writing skills in deep learning studies</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
