@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PocketSpends</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>PocketSpends</h1>
+    <p class="project-meta">
+      Academic Project | Mobile Application Development
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>Programmer, UI designer</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>Android Studio, Kotlin</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>Oct 2025 - Nov 2025</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>
+        PocketSpends is a mobile application developed as part of the Mobile Application Development course. The project aims to help users record and manage their daily financial activities, including income and expenses, in a simple and structured way. In this project, I focused on designing the user interface, defining application flows, and implementing the core application logic. The app emphasizes clarity, ease of use, and real-time data updates to help users better understand their financial habits and monthly spending patterns.
+      </p>
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+      <h4>Transaction Management</h4>
+      <p>
+        Allows users to add, edit, and delete income and expense transactions, including amount, category, date, and optional receipt photos.
+      </p>
+      <img src="images/transactionmanagement.png" alt="transactionmanagement">
+    </div>
+
+    <div class="feature-card">
+      <h4>Financial Summary & Budget Management</h4>
+      <p>
+        Provides a clear overview of monthly income and expenses, supported by visual summaries and budget tracking. This feature helps users monitor spending patterns, set monthly limits, and manage their finances more effectively.
+      </p>
+      <img src="images/budgettrack.png" alt="budget management">
+    </div>
+
+    <div class="feature-card">
+      <h4>Transaction History</h4>
+      <p>
+        Displays a structured list of past transactions grouped by date, allowing users to review and manage their financial records easily.
+      </p>
+      <img src="images/transactionhistory.png" alt="transaction History">
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Problem Identification & SDGs Alignment</h4>
+        <p>
+          TThe development process began by identifying everyday financial management problems faced by users, particularly in tracking income and expenses consistently. The project scope was aligned with relevant Sustainable Development Goals (SDGs), focusing on promoting financial awareness and responsible financial behavior through a digital solution.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Requirement Analysis & Planning</h4>
+        <p>
+          Based on the identified problems, application requirements were defined to ensure the solution remained practical and easy to use. Key features were planned to support daily expense tracking, financial summaries, and budget management in accordance with the course objectives.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>UI Design & Application Flow</h4>
+        <p>
+          User interfaces and application flows were designed to provide clear navigation and efficient data input. Special attention was given to form design, screen transitions, and information hierarchy to support a smooth user experience on mobile devices.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Application Logic Implementation</h4>
+        <p>
+          Core application logic was implemented using Kotlin to manage transaction data, calculate financial summaries, and update application states. This stage focused on ensuring correct data processing and responsive interactions within the application.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Testing & Refinement</h4>
+        <p>
+          The application was tested to ensure all features functioned correctly across different usage scenarios. Improvements were made to both the interface and logic to enhance usability, performance, and overall application stability.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">Gained hands-on experience in designing and implementing mobile application interfaces</div>
+        <div class="outcome-item">Improved understanding of application state management and user interaction flow</div>
+        <div class="outcome-item">Enhanced skills in translating requirements into functional application logic</div>
+        <div class="outcome-item">Developed a structured approach to building maintainable mobile applications</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

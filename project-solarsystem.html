@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Solar Systems Simulator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>3D Solar System Simulator</h1>
+    <p class="project-meta">
+      Academic Project | Computer Graphics
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>Graphics Programmer</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>Graphics Programmer</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>Nov 2025 - Des 2025</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>
+        This project is an educational 3D visualization of the solar system developed as part of a Computer Graphics course. 
+        The application presents a three-dimensional simulation of the solar system to help users understand planetary motion, 
+        spatial relationships, and astronomical concepts through interactive graphics.
+      </p>
+
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+      <h4>3D Solar System Visualization</h4>
+      <p>
+        The application presents a three-dimensional visualization of the solar system, including the Sun, planets, and orbital paths. This allows users to observe spatial relationships between celestial objects in a 3D environment.
+      </p>
+      <div class="detail-feature-media">
+        <video class="detail-feature-video" autoplay loop muted playsinline>
+        <source src="https://res.cloudinary.com/da6jmiekq/video/upload/v1767097189/bag_1_diem_aja_ngeliatin_planet_rfllmb.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <h4>Orbit Camera Mode</h4>
+      <p>
+        In this mode, the camera is constrained to orbit around a selected object. Users can rotate the view along the orbital path, providing a focused and controlled observation of planets without free movement.
+      </p>
+      <div class="detail-feature-media">
+        <video class="detail-feature-video" autoplay loop muted playsinline>
+        <source src="https://res.cloudinary.com/da6jmiekq/video/upload/v1767099104/1230_1_evheko.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <h4>Free Camera Mode</h4>
+      <p>
+        This camera mode allows users to freely explore the solar system without movement restrictions. Users can navigate the 3D space in any direction to observe planets from different angles and distances.
+      </p>
+      <div class="detail-feature-media">
+        <video class="detail-feature-video" autoplay loop muted playsinline>
+        <source src="https://res.cloudinary.com/da6jmiekq/video/upload/v1767099005/1230_mtkufh.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <h4>Planet Information Panel</h4>
+      <p>
+        When a planet is selected, an information panel is displayed showing detailed data such as the planet's name, rotation, revolution, and additional astronomical facts. This feature enhances the educational value of the simulation.
+      </p>
+      <div class="detail-feature-media">
+        <video class="detail-feature-video" autoplay loop muted playsinline>
+        <source src="https://res.cloudinary.com/da6jmiekq/video/upload/v1767099177/1230_2_ldytdv.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Research & Concept Development</h4>
+        <p>
+          The development process began with studying the basic concepts of the solar system and identifying how astronomical objects could be represented visually using computer graphics techniques. This stage focused on understanding spatial relationships, motion, and scale in a 3D environment.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Graphics Implementation</h4>
+        <p>
+          The application was implemented using OpenGL, where 3D objects such as planets, orbits, and background environments were modeled and rendered. This stage involved applying transformations, lighting concepts, and animation techniques to create a dynamic simulation.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Interaction & Camera Design</h4>
+        <p>
+          Various camera systems were designed to allow users to navigate and observe the solar system from different viewpoints. User input was integrated to control camera movement and switch between viewing modes.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Testing & Refinement</h4>
+        <p>
+          The final stage involved testing the application to ensure correct rendering, smooth animations, and stable interactions. Adjustments were made to improve performance, visual clarity, and overall usability of the simulation.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">Improved understanding of 3D graphics concepts and OpenGL programming</div>
+        <div class="outcome-item">Practical experience in rendering and animating objects in a 3D space</div>
+        <div class="outcome-item">Enhanced skills in implementing camera systems and user interaction</div>
+        <div class="outcome-item">Ability to translate theoretical computer graphics concepts into a functional application</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UBus</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>UBus</h1>
+    <p class="project-meta">
+      Academic Project | User Experience Design
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>UX Designer</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>Figma</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>May 2025 - Jun 2025</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>
+        UBus is a user experience design project developed as part of the User Experience Planning course. The project addresses mobility challenges within Universitas Brawijaya, where the wide campus area, limited parking space, and lack of an integrated internal transportation system often cause delays, fatigue, and increased reliance on private vehicles.
+        The project focuses on designing a mobile application prototype that helps students and academic staff monitor campus shuttle buses in real time, plan their trips efficiently, and reduce uncertainty during daily commuting. The solution emphasizes a user-centered design approach by aligning system features with real user needs gathered through research, testing, and iterative design.
+      </p>
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+      <h4>Real-Time Shuttle Tracking</h4>
+      <p>
+        Allows users to view the live position of campus shuttle buses on a map, helping them estimate arrival times and plan their departure more accurately.
+      </p>
+      <img src="images/realtimeshuttle.png" alt="Real-Time">
+    </div>
+
+    <div class="feature-card">
+      <h4>Bus Booking & Seat Selection</h4>
+      <p>
+        Enables users to book shuttle trips in advance and select available seats, reducing uncertainty and ensuring a more comfortable commuting experience.
+      </p>
+      <img src="images/booking.png" alt="booking">
+    </div>
+
+    <div class="feature-card">
+      <h4>Schedule Integration</h4>
+      <p>
+        Supports users in planning trips based on their academic schedules by providing estimated travel times, departure reminders, and route information.
+      </p>
+      <img src="images/integration.png" alt="integration">
+    </div>
+
+    <div class="feature-card">
+      <h4>Top-Up & Digital Payment</h4>
+      <p>
+        Provides a digital wallet feature that allows users to top up balance and complete shuttle payments seamlessly within the application.
+      </p>
+      <img src="images/topup.png" alt="topup">
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Problem Identification & Validation</h4>
+        <p>
+          The process began with identifying real mobility problems within the campus environment. Initial assumptions were validated through observations and early discussions to ensure that the identified issues reflected actual user challenges rather than personal assumptions.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>User Research</h4>
+        <p>
+          User research was conducted through surveys and interviews to understand user behavior, needs, and pain points related to campus transportation. This phase focused on validating the problem, gathering evidence, and identifying patterns that would guide solution development.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Solution Definition & Feature Planning</h4>
+        <p>
+          Insights from user research were analyzed to define the most relevant solution. Based on validated problems, key product features were determined to address user needs effectively. This phase emphasized prioritization, feasibility, and alignment with user expectations.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Wireframing & Interface Design</h4>
+        <p>
+          Based on the defined solution and feature requirements, wireframes and interface designs were created to visualize how users would interact with the application. The design focused on clarity, logical flow, and usability rather than visual complexity.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Evaluation & Refinement</h4>
+        <p>
+          The proposed solution and design were evaluated through feedback from target users. Findings from this phase were used to refine both the product concept and interface design, ensuring that the final prototype aligned with validated user needs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">Developed a strong understanding of user-centered design principles applied to real-world mobility problems</div>
+        <div class="outcome-item">Gained hands-on experience in conducting UX research, usability testing, and iterative design</div>
+        <div class="outcome-item">Improved skills in translating user insights into structured design solutions</div>
+        <div class="outcome-item">Strengthened ability to design intuitive, efficient, and user-focused digital experiences</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

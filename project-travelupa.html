@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travelupa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>Travelupa</h1>
+    <p class="project-meta">
+      Academic Project | Mobile Application Development
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>Programmer, UI designer</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>Android Studio, Kotlin</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>Nov 2025 - Des 2025</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>
+        Travelupa is an individual mobile application project developed as part of the Mobile Application Development course. The project focuses on building a destination management application that allows users to add, edit, and delete travel destinations through a structured mobile interface. In this project, I was responsible for the entire development process, including UI implementation, application logic, and Firebase Firestore integration. Although the project topic was predefined by the course, all design decisions and technical implementations were independently developed to ensure functionality, data consistency, and usability.
+      </p>
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+      <h4>User Authentication</h4>
+      <p>
+        Provides a login system that allows users to securely access the application before managing destination data. Authentication ensures that user actions and data access are properly controlled.
+      </p>
+      <img src="images/login.png" alt="user Authentication">
+    </div>
+
+    <div class="feature-card">
+      <h4>Destination Management</h4>
+      <p>
+        Allows users to add, edit, and delete travel destinations through an intuitive input form. All saved destinations are displayed in a structured list view, enabling users to review, manage, and interact with destination data efficiently.
+      </p>
+      <img src="images/destinationmanagement.png" alt="booking">
+    </div>
+
+    <div class="feature-card">
+      <h4>Cloud Data Storage (Firebase Firestore)</h4>
+      <p>
+        All destination data is stored and managed using Firebase Firestore. This enables real-time data synchronization, persistent storage, and reliable data management across application sessions.
+      </p>
+      <img src="images/firebase.png" alt="integration">
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Problem Definition & Requirement Analysis</h4>
+        <p>
+          The development process began by understanding the predefined project requirements and identifying the core functionalities needed for a destination management application. The focus was on enabling basic CRUD operations with cloud-based data storage.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Application Logic Implementation</h4>
+        <p>
+          Core application logic was implemented using Kotlin to handle user interactions, form validation, data updates, and state changes. Special attention was given to ensuring smooth transitions between different application states.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Firebase Integration</h4>
+        <p>
+          Firebase Firestore was integrated to manage cloud-based data storage. This stage involved configuring Firebase services, defining data structures, and connecting application logic with Firestore operations.
+        </p>
+      </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">Developed a complete mobile application independently from start to finish</div>
+        <div class="outcome-item">Gained practical experience in implementing CRUD functionality with Firebase Firestore</div>
+        <div class="outcome-item">Improved understanding of mobile application architecture and state management</div>
+        <div class="outcome-item">Strengthened skills in integrating cloud services into mobile applications</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
