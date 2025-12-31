@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareMate</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>CareMate</h1>
+    <p class="project-meta">
+      UI/UX Competition | CodeFest
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>Product Manager</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>Figma</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>Apr 2025</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>
+        CareMate is a web-based health monitoring platform designed to help families monitor the health conditions of elderly parents remotely. The project addresses challenges faced by busy family members who struggle to consistently track routine health data such as blood pressure, blood sugar, cholesterol, and medication schedules. Developed for the CodeFest UI/UX Competition, CareMate applies a human-centered innovation approach, ensuring that the solution is grounded in real user problems, validated needs, and practical daily usage scenarios.
+      </p>
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+        <h4>Dashboard Overview</h4>
+        <p>
+            Displays a summarized view of patient information, medication reminders, and upcoming health check schedules, allowing caregivers to quickly monitor overall health status in one place.
+        </p>
+        <img src="images/Dashboard.png" alt="dashboard overview">
+    </div>
+
+
+    <div class="feature-card">
+        <h4>Health Monitoring</h4>
+        <p>
+            Tracks key health metrics such as BMI, blood sugar, blood pressure, and cholesterol through simple charts, helping users understand health trends over time.
+        </p>
+        <img src="images/Pantau Kesehatan Ringkasan.png" alt="health monitoring">
+    </div>
+
+
+    <div class="feature-card">
+        <h4>Medication Reminder</h4>
+        <p>
+            Manages daily medication schedules with intake confirmation and history tracking to ensure patients take their medicine on time and consistently.
+        </p>
+        <img src="images/Pengingat Obat.png" alt="medication reminder">
+    </div>
+
+    <div class="feature-card">
+        <h4>Health Check Schedule</h4>
+        <p>
+            Allows users to plan, view, and manage medical check-up schedules using a calendar-based system to prevent missed appointments.
+        </p>
+        <img src="images/Jadwal Cek Kesehatan.png" alt="health check schedule">
+    </div>
+
+    <div class="feature-card">
+        <h4>Health Articles</h4>
+        <p>
+            Provides categorized and searchable health articles to support users with reliable information and daily health education.
+        </p>
+        <img src="images/Artikel.png" alt="health articles">
+    </div>
+
+    <div class="feature-card">
+        <h4>Cora - AI Health Assistant</h4>
+        <p>
+            An AI-powered assistant that answers common health questions, explains medical terms, and provides basic health guidance in an accessible way.
+        </p>
+        <img src="images/Cora.png" alt="AI health assistant">
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Problem Discovery & Validation</h4>
+        <p>
+          I initiated the project by identifying real-world problems faced by families with elderly parents, supported by secondary research and contextual analysis. The problem was validated through user observations and literature references related to elderly health monitoring and family caregiving challenges.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>User Research & Insight Synthesis</h4>
+        <p>
+          User research was conducted to understand user behavior, pain points, and expectations. Insights from this stage were synthesized into clear problem statements and opportunity areas that guided product direction.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Solution Definition & Feature Prioritization</h4>
+        <p>
+          Based on validated insights, I defined the core solution concept and prioritized features that directly addressed user needs, balancing feasibility, impact, and usability.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Wireframing & Product Structuring</h4>
+        <p>
+          I translated product requirements into low-fidelity wireframes, defining user flows, feature hierarchy, and interaction logic to ensure clarity before entering the visual design phase.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Iterative Evaluation</h4>
+        <p>
+          The solution concept and wireframes were evaluated through feedback sessions, allowing refinements to ensure alignment with user expectations and competition objectives.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">A well-defined product concept grounded in real user needs</div>
+        <div class="outcome-item">Clear feature prioritization and user flow documentation</div>
+        <div class="outcome-item">Wireframes that effectively guided the UI design process</div>
+        <div class="outcome-item">A cohesive human-centered solution suitable for real-world adoption</div>
+        <div class="outcome-item">Strengthened experience in product thinking, user research, and problem validation</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

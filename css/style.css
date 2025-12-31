@@ -26,8 +26,9 @@
 .container {
     max-width: 1200px;
     width: 100%;
-    margin: auto;
-    padding: 0 24px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -185,7 +186,8 @@ nav > .wrapper{
 }
 
 .about-intro {
-  max-width: 100%;
+  max-width: 800px;
+  width: 100%;
   margin-bottom: 48px;
   line-height: 1.7;
   white-space: normal;
@@ -268,6 +270,11 @@ PROJEK GRID
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 32px;
+}
+
+.project-grid span {
+  font-size: 0.9rem;
+  color: #3a3938a3;
 }
 
 /* CARD */
