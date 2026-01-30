@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend-test Project </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+  <!-- BUTTON BACK -->
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn"><</a>
+</div>
+
+<!-- PROJECT DETAIL -->
+<section class="project-detail container">
+
+  <!-- HEADER -->
+  <header class="project-header fade-up">
+    <h1>Restaurant Listing App</h1>
+    <p class="project-meta">
+      Front End Technical Test | React.js
+    </p>
+  </header>
+
+  <!-- PROJECT INFO BOX -->
+  <div class="project-info fade-up">
+      <div>
+        <span>Role</span>
+        <p>Front End Developer</p>
+      </div>
+
+      <div>
+        <span>Tools</span>
+        <p>React.js, JavaScript, HTML, CSS, Public API</p>
+      </div>
+
+      <div>
+        <span>Duration</span>
+        <p>Jan 2026</p>
+      </div>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <section class="project-section fade-up">
+      <h2>Project Description</h2>
+      <p>Restaurant Listing App is a front-end web application developed as part of a technical test for a Front End Developer role. The project focuses on implementing a clean and functional user interface using React.js while integrating data from a public API.</p>
+      <p> The application allows users to browse restaurant data, apply multiple filters such as open status, price range, and cuisine categories, and view detailed restaurant information through a dedicated detail page. This project emphasizes component-based architecture, client-side filtering logic, and dynamic data rendering.</p>
+  </section>
+
+
+  <!-- FEATURE / SCREENSHOT -->
+  <div class="project-features fade-up">
+    <div class="feature-card">
+      <h4>Restaurant Listing</h4>
+        <p>Displays a list of restaurants fetched from a public API, including images, categories, ratings, price range, and open or closed status. 
+        </p>
+        <img src="images/detailhome.png" alt="dashboard restaurants">
+    </div>
+
+    <div class="feature-card">
+      <h4>Restaurant Detail View</h4>
+        <p>Provides detailed information about a selected restaurant, including ratings and user reviews, with clear navigation from the main listing. 
+        </p>
+        <img src="images/detailreview.png" alt="detailrestaurants">
+    </div>
+
+  </div>
+
+  <!-- PROCESS -->
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+
+    <div class="process-list">
+      <div class="process-item">
+        <h4>Requirement Analysis</h4>
+        <p>
+            I started by analyzing the technical test requirements, focusing on page structure, filtering behavior, API usage, and navigation flow between list and detail views.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Project Setup</h4>
+        <p> The project was initialized using React.js with a structured folder organization to support reusable components and maintainable code.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>API Integration</h4>
+        <p>
+            Public APIs were used to simulate restaurant data. The data was processed and mapped into UI components, ensuring consistent rendering and error handling.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Filtering & State Management</h4>
+        <p>
+          Client-side filtering was implemented for open status and price range, while category filtering was handled through API-based searching. State management ensured smooth UI updates.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Deployment</h4>
+        <p>
+            The application was deployed to Netlify, making it accessible online and ready for review, with the source code hosted on GitHub.
+        </p>
+      </div>
+  </div>
+
+  <section class="project-section fade-up">
+      <h2>Outcome</h2>
+
+      <div class="outcome-grid">
+        <div class="outcome-item">Improved ability to transform raw data into actionable business insights</div>
+        <div class="outcome-item">Hands-on experience in exploratory data analysis and feature engineering</div>
+        <div class="outcome-item">Stronger understanding of data storytelling through dashboard visualizations</div>
+        <div class="outcome-item">Experience working with real-world competition datasets and analytical constraints</div>
+      </div>
+  </section>
+
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
