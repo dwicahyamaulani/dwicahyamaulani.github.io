@@ -32,13 +32,14 @@
 
 <!-- HERO -->
 <header class="home-header">
+  <div class="stars" id="stars-container"></div>
   <div class="hero">
     <div class="hero-left fade-up">
       <img src="images/fotocacaa.jpg" alt="Foto Cahya">
     </div>
     <div class="hero-right fade-up">
       <span class="eyebrow">Open to internship &amp; junior roles</span>
-      <h1>Hi, I'm Dwi Cahya Maulani</h1>
+      <h1>Hi, I'm <em>Dwi Cahya Maulani</em></h1>
       <p class="tagline">
         Informatics Engineering student at Universitas Brawijaya. I build full-stack apps,
         design user-centered interfaces, and explore data analytics &amp; computer vision.
@@ -49,7 +50,7 @@
       </div>
       <div class="hero-stats">
         <div>
-          <span class="stat-num">12+</span>
+          <span class="stat-num">16+</span>
           <span class="stat-label">Projects</span>
         </div>
         <div>
@@ -64,6 +65,8 @@
     </div>
   </div>
 </header>
+
+<div class="hero-divider"></div>
 
 <!-- SECTION ABOUT -->
 <section id="about">
@@ -328,6 +331,62 @@
         </div>
       </div>
 
+      <!-- CARD 13 -->
+      <div class="project-card" data-category="dev">
+        <img src="images/kryapro-dashboard.png" alt="KryaPro LMS">
+        <div class="project-content">
+          <span class="role-badge badge-dev">Frontend Developer</span>
+          <h4>KryaPro LMS</h4>
+          <p>Student-facing Learning Management System built from scratch using ReactJS, with full frontend-backend integration on a Laravel backend.</p>
+          <div class="project-buttons">
+            <a href="project-kryapro.html" class="btn-details">See details</a>
+            <a href="#" target="_blank" class="btn-details">Visit code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 14 -->
+      <div class="project-card" data-category="data">
+        <img src="images/mlops-pipeline.png" alt="MLOps Prediksi Harga Pangan">
+        <div class="project-content">
+          <span class="role-badge badge-data">ML Engineer & MLOps</span>
+          <h4>MLOps – Prediksi Harga Pangan Jawa Timur</h4>
+          <p>End-to-end MLOps pipeline untuk prediksi harga pangan di 7 komoditas, di-deploy via FastAPI + Docker dengan CI/CD dan monitoring Grafana.</p>
+          <div class="project-buttons">
+            <a href="project-mlops.html" class="btn-details">See details</a>
+            <a href="#" target="_blank" class="btn-details">Visit code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 15 -->
+      <div class="project-card" data-category="data">
+        <img src="images/rdv-dashboard.png" alt="RDV NYC Taxi Analytics">
+        <div class="project-content">
+          <span class="role-badge badge-data">Data Engineer & ML Developer</span>
+          <h4>RDV – NYC Taxi Analytics</h4>
+          <p>Data engineering pipeline dengan Prefect & DuckDB, dilengkapi ML fare prediction dan geospatial Streamlit dashboard berbasis Folium maps.</p>
+          <div class="project-buttons">
+            <a href="project-rdv.html" class="btn-details">See details</a>
+            <a href="#" target="_blank" class="btn-details">Visit code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 16 -->
+      <div class="project-card" data-category="dev">
+        <img src="images/capstone-profile.png" alt="AI Team Assistant">
+        <div class="project-content">
+          <span class="role-badge badge-dev">Frontend Developer</span>
+          <h4>AI Team Assistant</h4>
+          <p>React 18 frontend untuk platform kolaborasi tim berbasis AI, terintegrasi dengan RAG pipeline, Pinecone vector DB, dan n8n automation — deployed live untuk PT. Jalin Mayantara Indonesia.</p>
+          <div class="project-buttons">
+            <a href="project-capstone.html" class="btn-details">See details</a>
+            <a href="https://capstone.karyatech.web.id" target="_blank" class="btn-details">Live site</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -373,6 +432,26 @@
       });
     });
   });
+</script>
+
+<script>
+  (function() {
+    const container = document.getElementById('stars-container');
+    if (!container) return;
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      const size = Math.random() * 2 + 0.5;
+      star.style.cssText = [
+        'width:' + size + 'px',
+        'height:' + size + 'px',
+        'top:' + Math.random() * 100 + '%',
+        'left:' + Math.random() * 100 + '%',
+        'opacity:' + (Math.random() * 0.5 + 0.1)
+      ].join(';');
+      container.appendChild(star);
+    }
+  })();
 </script>
 
 </body>

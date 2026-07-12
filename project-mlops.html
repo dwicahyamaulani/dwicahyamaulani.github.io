@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MLOps – Prediksi Harga Pangan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn">&lt;</a>
+</div>
+
+<section class="project-detail container">
+
+  <header class="project-header fade-up">
+    <h1>MLOps – Prediksi Harga Pangan Jawa Timur</h1>
+    <p class="project-meta">
+      Capstone Project | Machine Learning Operations & Food Price Forecasting
+    </p>
+  </header>
+
+  <div class="project-info fade-up">
+    <div>
+      <span>Role</span>
+      <p>ML Engineer & MLOps</p>
+    </div>
+    <div>
+      <span>Tools</span>
+      <p>FastAPI, Docker Compose, Prometheus, Grafana, GitHub Actions, DVC, DagsHub</p>
+    </div>
+    <div>
+      <span>Duration</span>
+      <p>Apr 2026 – Jun 2026</p>
+    </div>
+    <div>
+      <span>Links</span>
+      <p>
+        <a href="#" target="_blank" style="color: var(--blue-600);">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="#" target="_blank" style="color: var(--blue-600);">DagsHub</a>
+      </p>
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+    <h2>Project Description</h2>
+    <p>
+      This project is an end-to-end MLOps pipeline built to predict food commodity prices in East Java,
+      covering 7 commodities across multiple time horizons. The system was designed to automate the full
+      machine learning lifecycle — from data ingestion and feature engineering through to model training,
+      deployment, and monitoring — following MLOps best practices. A total of 42 models were trained across
+      the 7 commodities, exposed via a FastAPI service, containerized with Docker Compose, and deployed
+      with CI/CD automation using GitHub Actions and DVC on DagsHub. System health and model performance
+      are monitored in real time through a Prometheus and Grafana observability stack.
+    </p>
+  </section>
+
+  <div class="project-features fade-up">
+
+    <div class="feature-card">
+      <h4>Automated Data Pipeline</h4>
+      <p>
+        Built an automated data ingestion and preprocessing pipeline that collects food commodity price
+        data, handles missing values, and engineers time-series features — ensuring the training data
+        is always consistent and reproducible across runs.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h4>Multi-Commodity Model Training</h4>
+      <p>
+        Trained 42 forecasting models across 7 food commodities, applying feature engineering techniques
+        tailored for time-series prediction. Experiments and model versions were tracked and managed
+        using DVC on DagsHub, ensuring full reproducibility.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h4>FastAPI Serving & Docker Deployment</h4>
+      <p>
+        Packaged and exposed the trained models through a FastAPI REST API service, containerized using
+        Docker Compose for consistent deployment across environments. The service handles prediction
+        requests per commodity with structured JSON responses.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h4>CI/CD & Monitoring Stack</h4>
+      <p>
+        Implemented a CI/CD pipeline using GitHub Actions to automate testing, model re-training triggers,
+        and deployment. System observability is handled by Prometheus for metrics collection and Grafana
+        for real-time dashboard monitoring of model performance and API health.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+    <div class="process-list">
+
+      <div class="process-item">
+        <h4>Problem Scoping & Architecture Design</h4>
+        <p>
+          Defined the forecasting problem scope — 7 food commodities, time-series prediction, and
+          multi-model management requirements. Designed the overall MLOps architecture covering data,
+          training, serving, and monitoring layers before implementation began.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Data Ingestion & Feature Engineering</h4>
+        <p>
+          Built the automated data ingestion pipeline to collect and preprocess historical food price data
+          from East Java. Applied time-series feature engineering including lag features, rolling statistics,
+          and calendar-based variables to improve model signal quality.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Model Training & Experiment Tracking</h4>
+        <p>
+          Trained 42 models across 7 commodities, using DVC on DagsHub for experiment tracking and
+          versioning. Compared model configurations to select the best-performing model per commodity
+          based on evaluation metrics.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>API Development & Containerization</h4>
+        <p>
+          Developed a FastAPI service to serve predictions, then containerized the full stack using
+          Docker Compose — ensuring the API, model artifacts, and dependencies are packaged together
+          for consistent and reproducible deployments.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>CI/CD Automation & Observability Setup</h4>
+        <p>
+          Configured GitHub Actions for automated testing and deployment triggers. Set up Prometheus
+          to collect API and model metrics, and built Grafana dashboards to visualize system health
+          and monitor prediction performance over time.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+    <h2>Outcome</h2>
+    <div class="outcome-grid">
+      <div class="outcome-item">End-to-end MLOps pipeline covering data, training, serving, and monitoring</div>
+      <div class="outcome-item">42 trained models across 7 food commodities with full experiment tracking</div>
+      <div class="outcome-item">Production-ready FastAPI service deployed with Docker Compose</div>
+      <div class="outcome-item">Automated CI/CD pipeline with GitHub Actions and DVC on DagsHub</div>
+      <div class="outcome-item">Real-time observability stack with Prometheus and Grafana</div>
+      <div class="outcome-item">Practical experience applying MLOps principles in a capstone-scale project</div>
+    </div>
+  </section>
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

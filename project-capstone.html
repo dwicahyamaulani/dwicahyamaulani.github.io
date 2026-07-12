@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Team Assistant - Capstone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn">&lt;</a>
+</div>
+
+<section class="project-detail container">
+
+  <header class="project-header fade-up">
+    <h1>AI Team Assistant</h1>
+    <p class="project-meta">
+      Capstone Project | AI-Powered Team Collaboration Platform
+      <br><i>PT. Jalin Mayantara Indonesia</i>
+    </p>
+  </header>
+
+  <div class="project-info fade-up">
+    <div>
+      <span>Role</span>
+      <p>Frontend Developer</p>
+    </div>
+    <div>
+      <span>Tools</span>
+      <p>React 18, Pinecone, n8n, RAG Pipeline</p>
+    </div>
+    <div>
+      <span>Duration</span>
+      <p>Mar 2026 - Jun 2026</p>
+    </div>
+    <div>
+      <span>Links</span>
+      <p>
+        <a href="#" target="_blank" style="color: var(--blue-600);">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://capstone.karyatech.web.id" target="_blank" style="color: var(--blue-600);">Live Site</a>
+      </p>
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+    <h2>Project Description</h2>
+    <p>
+      AI Team Assistant is a capstone project developed in collaboration with PT. Jalin Mayantara Indonesia
+      as part of a 6-person team. The platform is an AI-powered team collaboration tool that helps
+      organizational teams retrieve knowledge, answer internal queries, and streamline team workflows
+      through a RAG (Retrieval-Augmented Generation) pipeline backed by a Pinecone vector database
+      and automated with n8n workflow automation. My responsibility was building the complete
+      student-facing frontend using React 18, integrating it with the AI backend services,
+      and ensuring a smooth, intuitive user experience for team members interacting with the assistant.
+      The platform is deployed live at capstone.karyatech.web.id.
+    </p>
+  </section>
+
+  <div class="project-features fade-up">
+
+    <div class="feature-card">
+      <h4>AI Assistant Interface</h4>
+      <p>
+        Built the core conversational interface where team members can query the AI assistant in
+        natural language. The interface handles real-time response streaming, conversation history,
+        and contextual follow-up questions — connected to the RAG pipeline backend.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h4>Knowledge Base Integration</h4>
+      <p>
+        Integrated the frontend with a Pinecone vector database to enable semantic search across
+        the team's internal knowledge base. Users can upload documents and query relevant content
+        through the assistant with contextually accurate retrieval.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h4>Workflow Automation with n8n</h4>
+      <p>
+        Connected the frontend to n8n-powered automation workflows that handle backend task
+        orchestration — including document processing triggers, notification flows, and
+        integration with external team tools — presented through a clean and accessible UI.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h4>Team Dashboard & Activity Overview</h4>
+      <p>
+        Developed a team dashboard that provides an overview of recent assistant interactions,
+        knowledge base activity, and team usage statistics — helping team leads monitor
+        adoption and identify frequently queried topics.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+    <div class="process-list">
+
+      <div class="process-item">
+        <h4>Requirement Alignment with Client & Team</h4>
+        <p>
+          Collaborated with PT. Jalin Mayantara Indonesia and the 5-person capstone team to align
+          on product requirements, user stories, and technical architecture. Defined the frontend
+          scope, component structure, and API contract with the backend team.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>React 18 Frontend Development</h4>
+        <p>
+          Built the full frontend from scratch using React 18, leveraging concurrent features and
+          hooks for performant state management. Structured the codebase for maintainability with
+          clear component boundaries and separation of concerns across features.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>RAG Pipeline & Pinecone Integration</h4>
+        <p>
+          Integrated the frontend with the team's RAG pipeline and Pinecone vector database through
+          API calls, handling response streaming for the chat interface, document upload flows,
+          and semantic search result rendering.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>n8n Workflow Connection</h4>
+        <p>
+          Connected UI actions to n8n automation workflows via webhook triggers, enabling
+          backend processes (such as document ingestion and notification dispatch) to be
+          initiated directly from frontend interactions in a seamless user experience.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Deployment & Cross-Team QA</h4>
+        <p>
+          Coordinated the frontend deployment to capstone.karyatech.web.id and participated in
+          cross-team quality assurance sessions to verify end-to-end feature correctness,
+          API reliability, and UI responsiveness before the final client presentation.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+    <h2>Outcome</h2>
+    <div class="outcome-grid">
+      <div class="outcome-item">Complete React 18 frontend for a live AI-powered team platform</div>
+      <div class="outcome-item">Successful integration with RAG pipeline and Pinecone vector database</div>
+      <div class="outcome-item">n8n workflow automation connected through frontend-triggered webhooks</div>
+      <div class="outcome-item">Platform deployed live at capstone.karyatech.web.id</div>
+      <div class="outcome-item">Experience delivering a client-facing product in a 6-person cross-functional team</div>
+      <div class="outcome-item">Strengthened skills in AI-integrated frontend development and real-world deployment</div>
+    </div>
+  </section>
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

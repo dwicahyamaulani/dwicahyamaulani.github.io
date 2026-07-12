@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KryaPro LMS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail-project">
+
+<div class="project-nav container">
+  <a href="index.html#projects" class="back-btn">&lt;</a>
+</div>
+
+<section class="project-detail container">
+
+  <header class="project-header fade-up">
+    <h1>KryaPro LMS</h1>
+    <p class="project-meta">
+      Internship Project | Learning Management System
+      <br><i>Krya Global</i>
+    </p>
+  </header>
+
+  <div class="project-info fade-up">
+    <div>
+      <span>Role</span>
+      <p>Frontend Developer (Full-Stack Contribution)</p>
+    </div>
+    <div>
+      <span>Tools</span>
+      <p>ReactJS, Tailwind CSS, Laravel</p>
+    </div>
+    <div>
+      <span>Duration</span>
+      <p>Feb 2026 - Jun 2026</p>
+    </div>
+    <div>
+      <span>Links</span>
+      <p>
+        <a href="#" target="_blank" style="color: var(--blue-600);">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="#" target="_blank" style="color: var(--blue-600);">Live Demo</a>
+      </p>
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+    <h2>Project Description</h2>
+    <p>
+      KryaPro LMS is a web-based Learning Management System developed during an internship at Krya Global.
+      The platform is designed to support structured online learning by providing students with a centralized
+      space to access courses, complete assessments, and interact with mentors. I was responsible for building
+      the complete student-facing side of the application from scratch — covering the Landing Page, Dashboard,
+      Assessment module, Mentor Page, and additional supporting pages — using ReactJS with a Laravel backend.
+      Beyond core frontend development, I also contributed to frontend-backend integration and assisted in
+      backend troubleshooting to ensure smooth data flow across the application.
+    </p>
+  </section>
+
+  <div class="project-features fade-up">
+
+    <div class="feature-card">
+      <h4>Landing Page</h4>
+      <p>
+        Designed and developed the public-facing landing page to communicate the platform's value proposition,
+        key features, and onboarding entry points for new users. Focused on clear visual hierarchy and
+        responsive layout across devices.
+      </p>
+      <img src="images/kryapro-landing.png" alt="KryaPro Landing Page">
+    </div>
+
+    <div class="feature-card">
+      <h4>Student Dashboard</h4>
+      <p>
+        Built the main student dashboard that presents enrolled courses, learning progress, upcoming schedules,
+        and activity summaries in a clean and scannable layout, allowing students to track their learning
+        journey at a glance.
+      </p>
+      <img src="images/kryapro-userdashboard.png" alt="KryaPro Dashboard">
+    </div>
+
+    <div class="feature-card">
+      <h4>Assessment Module</h4>
+      <p>
+        Developed an interactive assessment interface where students can attempt quizzes and assignments
+        tied to their courses. Handled dynamic question rendering, answer submission, and result display
+        with real-time state management in React.
+      </p>
+      <img src="images/kryapro-assessment.png" alt="KryaPro Assessment">
+    </div>
+
+    <div class="feature-card">
+      <h4>Mentor Page</h4>
+      <p>
+        Implemented the mentor discovery and profile page, enabling students to browse available mentors,
+        view mentor profiles and expertise, and initiate learning interactions — integrated with the
+        backend API for live data fetching.
+      </p>
+      <img src="images/kryapro-mentors.png" alt="KryaPro Mentor Page">
+    </div>
+
+  </div>
+
+  <div class="project-section fade-up">
+    <h2>Process</h2>
+    <div class="process-list">
+
+      <div class="process-item">
+        <h4>Requirements Understanding & Component Planning</h4>
+        <p>
+          Started by understanding the product requirements from the internship team and breaking down the
+          student-facing features into reusable React components. Planned the component hierarchy and state
+          management approach before writing any code.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>UI Development with ReactJS & Tailwind CSS</h4>
+        <p>
+          Built each page from scratch using ReactJS with Tailwind CSS for styling. Focused on producing
+          responsive, accessible, and consistent UI across all student-facing modules, following the
+          design specifications provided by the team.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Frontend-Backend Integration</h4>
+        <p>
+          Connected the React frontend to the Laravel backend through REST API calls, handling data fetching,
+          loading states, error boundaries, and response mapping for each module. Ensured consistent data
+          flow between student actions and backend logic.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Backend Troubleshooting & Collaboration</h4>
+        <p>
+          Contributed beyond the frontend scope by assisting the backend team in identifying and resolving
+          issues that surfaced during integration — including API response inconsistencies and data
+          mapping errors.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h4>Testing & Iteration</h4>
+        <p>
+          Conducted iterative testing across modules to ensure UI correctness, API integration stability,
+          and responsive behavior. Incorporated feedback from the team to refine component logic and
+          improve the overall user experience.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="project-section fade-up">
+    <h2>Outcome</h2>
+    <div class="outcome-grid">
+      <div class="outcome-item">Complete student-facing LMS built from scratch using ReactJS</div>
+      <div class="outcome-item">Hands-on experience with full-stack contribution in a real internship environment</div>
+      <div class="outcome-item">Strengthened skills in frontend-backend integration with REST API</div>
+      <div class="outcome-item">Improved ability to work within a cross-functional development team</div>
+      <div class="outcome-item">Practical experience managing component-level state in a production-oriented React project</div>
+    </div>
+  </section>
+
+  <div class="project-footer">
+    <a href="index.html#projects" class="btn-primary">Back to Projects</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
